@@ -25,7 +25,7 @@ const App = () => {
     <div id="main">
       {
         loading ? <Loader /> :
-      todos.map((todo) => <div key={todo.id} id={`todo-${todo.id}`}>{todo.title}</div>)
+      todos.map((todo) => <div id={`todo-${todo.id}`}>{todo.title}</div>)
       }
     </div>
   );
